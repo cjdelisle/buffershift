@@ -2,7 +2,7 @@
     "name": "buffershift",
     "description": "Bit-shift Buffers right or left in nodejs",
     "keywords": [ "shift", "bitshift", "bitwise", "buffer", "bignum" ],
-    "version": "0.0.0",
+    "version": "0.0.1",
     "repository": "https://github.com/cjdelisle/buffershift.git",
     "license": "MIT",
     "devDependencies": {
