@@ -1,3 +1,5 @@
+'use strict';
+
 const shl = module.exports.shl = (buf, shiftBits) => {
     if (shiftBits < 0) { return module.exports.shr(buf, -shiftBits); }
     if (shiftBits !== (shiftBits | 0)) { throw new Error("shiftBits must be a 32 bit int"); }

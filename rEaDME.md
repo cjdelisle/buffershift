@@ -1,5 +1,7 @@
 # BufferShift
 
+[![Build Status](https://travis-ci.org/cjdelisle/buffershift.svg?branch=master)](https://travis-ci.org/cjdelisle/buffershift)
+
 Bit Shift buffers in node.js
 
 This library exposes 2 simple functions which will bitshift an entire buffer of arbitrary size
@@ -23,6 +25,9 @@ console.log(x); // -> <Buffer 00 00 11 22>
 **NOTE:** The functions in this library mutate the input buffers. This point of this library is
 to be fast so it doesn't make much sense to copy buffers every shift, if you want to keep your
 buffers safe, copy them before shifting.
+
+## Node Version
+Tested on 4.2.1, 4.5.0 and 6.6.0
 
 ## License
 
