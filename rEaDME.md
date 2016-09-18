@@ -5,6 +5,12 @@ Bit Shift buffers in node.js
 This library exposes 2 simple functions which will bitshift an entire buffer of arbitrary size
 as if it were a bignum (but without the overhead of loading it in and out of a bignum library).
 
+## BufferShift.shl(buffer, numBits)
+Shift the buffer bits to the left: taken as a big-endian number, the number gets bigger.
+
+## BufferShift.shr(buffer, numBits)
+Shift the buffer bits to the right: taken as a big-endian number, the number gets smaller.
+
 ```javascript
 const BufferShift = require('buffershift');
 const x = new Buffer("00112233", "hex");
