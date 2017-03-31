@@ -1,15 +1,23 @@
 {
-    "name": "buffershift",
-    "description": "Bit-shift Buffers right or left in nodejs",
-    "keywords": [ "shift", "bitshift", "bitwise", "buffer", "bignum" ],
-    "version": "0.0.1",
-    "repository": "https://github.com/cjdelisle/buffershift.git",
-    "license": "MIT",
-    "devDependencies": {
-        "jshint": "~2.9.1"
-    },
-    "scripts": {
-        "lint": "jshint --config .jshintrc --exclude-path .jshintignore .",
-        "test": "node test.js"
-    }
+  "name": "buffershift",
+  "description": "Bit-shift Buffers right or left in nodejs",
+  "keywords": [
+    "shift",
+    "bitshift",
+    "bitwise",
+    "buffer",
+    "bignum"
+  ],
+  "version": "0.0.2",
+  "repository": "https://github.com/cjdelisle/buffershift.git",
+  "license": "MIT",
+  "devDependencies": {
+    "flow-bin": "^0.42.0",
+    "jshint": "~2.9.1"
+  },
+  "scripts": {
+    "lint": "jshint --config .jshintrc --exclude-path .jshintignore .",
+    "test": "node test.js",
+    "flow": "./node_modules/.bin/flow"
+  }
 }

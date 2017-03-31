@@ -1,3 +1,4 @@
+/*@flow*/
 'use strict';
 
 const Crypto = require('crypto');
@@ -51,7 +52,7 @@ const testCase = (input, count, left) => {
         }
     } catch (e) {
         console.log('testCase(new Buffer("' + input.toString('hex') + '", "hex"), ' +
-            count + ', ' + left + ')');
+            count + ', ' + left.toString() + ')');
         throw e;
     }
 };

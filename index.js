@@ -1,6 +1,7 @@
+/*@flow*/
 'use strict';
 
-const shl = module.exports.shl = (buf, shiftBits) => {
+const shl = module.exports.shl = (buf /*:Buffer*/, shiftBits /*:number*/) => {
     if (shiftBits < 0) { return module.exports.shr(buf, -shiftBits); }
     if (shiftBits !== (shiftBits | 0)) { throw new Error("shiftBits must be a 32 bit int"); }
     const bytes = 2 * ((shiftBits >> 4) + ((shiftBits & 15) !== 0));
@@ -25,7 +26,7 @@ const shl = module.exports.shl = (buf, shiftBits) => {
     }
 };
 
-const shr = module.exports.shr = (buf, shiftBits) => {
+const shr = module.exports.shr = (buf /*:Buffer*/, shiftBits /*:number*/) => {
     if (shiftBits < 0) { return shl(buf, -shiftBits); }
     if (shiftBits !== (shiftBits | 0)) { throw new Error("shiftBits must be a 32 bit int"); }
     const bytes = 2 * ((shiftBits >> 4) + ((shiftBits & 15) !== 0));
