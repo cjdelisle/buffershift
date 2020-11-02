@@ -1,5 +1,7 @@
 # BufferShift
 
+Status: stable+unmaintained, open an issue if you would like to take over
+
 [![Build Status](https://travis-ci.org/cjdelisle/buffershift.svg?branch=master)](https://travis-ci.org/cjdelisle/buffershift)
 
 Bit Shift buffers in node.js
